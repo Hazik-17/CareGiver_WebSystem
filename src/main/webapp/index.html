@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Main container */
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: #f4f4f4;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: rgba(44, 62, 80, 0.9);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar h1 {
+            font-size: 1.8rem;
+        }
+
+        /* Navigation links */
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background-color: rgba(52, 73, 94, 0.8);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ecf0f1;
+        }
+
+        /* Main dashboard area */
+        .dashboard {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .dashboard h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .dashboard p {
+            color: #ecf0f1;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Button styling */
+        .dashboard-button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .dashboard-button:hover {
+            background-color: #1f618d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Extra decorations */
+        .dashboard-decoration {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 10s infinite ease-in-out;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .circle.small {
+            width: 150px;
+            height: 150px;
+            bottom: 10%;
+            left: 20%;
+        }
+
+        .circle.large {
+            width: 300px;
+            height: 300px;
+            top: 20%;
+            right: 15%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Care Giver</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="login.html">Login</a> <!-- Link to login page -->
+        </div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+        <h2>Welcome to the Care Giver!</h2>
+        <p>Select an option from the menu or get started by clicking the button below.</p>
+        <button class="dashboard-button">Get Started</button>
+        <br><br>
+        <a href="booking.html">
+            <button class="dashboard-button">Book a Caretaker</button> <!-- Button Baru -->
+        </a>
+    </div>
+
+    <!-- Background Decorations -->
+    <div class="dashboard-decoration">
+        <div class="circle small"></div>
+        <div class="circle large"></div>
+    </div>
+
+</body>
+</html>
