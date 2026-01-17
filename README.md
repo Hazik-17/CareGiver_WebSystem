@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CareGiver WebSystem
 
 A simple Jakarta EE web application for managing caregiver booking flows and basic user authentication. This repository contains a small demo/demo-class project implemented with Jakarta EE (REST resources, JPA persistence and plain HTML frontend pages).
@@ -48,5 +47,3 @@ mvn clean package
 - This project is a small starting point; add authentication, validation, database setup, and unit/integration tests for production use.
 - If you want, I can: run a quick code scan, add a CONTRIBUTING section, or create a small Dockerfile for easier local runs.
 
-**Contact / Author**
-- See repository owner for questions and improvements.
